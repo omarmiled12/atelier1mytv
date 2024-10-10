@@ -1,0 +1,36 @@
+<div class="container">
+    <div>
+    <h2>Ajouter un TV:</h2>
+    </div>
+    <form >
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >ID TV</label>
+        <input type="text" [(ngModel)]= "newTv.idTv" 
+        name="idTv" class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4" >
+        <label >Nom TV</label>
+        <input type="text" [(ngModel)]= "newTv.nomTv"
+        name="nomTv" class="form-control">
+        </div>
+        <div class="col-sm-2 col-md-2 col-lg-2">
+        <label >Prix TV</label>
+        <input type="number" [(ngModel)]= "newTv.prixTv"
+        name="prixTv" class="form-control">
+        </div>
+        <div class="col-sm-4 col-md-4 col-lg-4">
+        <label >Date création</label>
+        <input type="date" [(ngModel)]= "newTv.dateCreation"
+        name="dateCreation" class="form-control">
+        </div>
+        <div class="mt-2">
+        <button type="submit" (click)="addTv()"class="btn btn-success">Ajouter</button>
+        <div>
+            <h3>{{message}}</h3>
+        </div>
+        <div>
+            
+        </div>
+        </div>
+        </form>
+        </div>
